@@ -25,11 +25,11 @@ def get_text_list(file):
 
 def get_execl_list(excel):
     import xlrd
-    return xlrd.open_workbook(excel).sheet_by_index(0).table.col_values(0)
+    return xlrd.open_workbook(excel).sheet_by_index(0).col_values(0)
 
 
 def get_file_list(file):
-    return get_execl_list(file) if os.path.splitext(file)[1] in ['xls'] else get_text_list(file)
+    return get_execl_list(file) if os.path.splitext(file)[1] in ['.xls', '.xlsx'] else get_text_list(file)
 
 
 def save_file(list_, file):

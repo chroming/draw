@@ -150,6 +150,8 @@ class Draw(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def _clear_selected(self):
         self.selected_list.clear()
+        self._reset_color(self.roll_label)
+        self.roll_label.setText("???")
         self.start_button.setEnabled(True)
         self.open_file_action.setEnabled(True)
 

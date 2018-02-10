@@ -30,7 +30,7 @@
   </property>
   <property name="font">
    <font>
-    <underline>true</underline>
+    <underline>false</underline>
     <kerning>false</kerning>
    </font>
   </property>
@@ -70,9 +70,9 @@
     <property name="font">
      <font>
       <family>Microsoft YaHei UI</family>
-      <pointsize>36</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
       <underline>false</underline>
      </font>
     </property>
